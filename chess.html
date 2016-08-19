@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五子棋</title>
+    <link rel="stylesheet" href="css/wuziqi.css"/>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <ul class="leftside">
+        <li><a id="regret-btn" class="regret-btn">悔棋</a></li>
+        <li><a class="regret-btn" href="index.html">返回</a></li>
+    </ul>
+    <div class="score-box">
+        <h3>目前比分</h3>
+        <p class="score">我方:<span id="me-score">0</span></p>
+        <p class="score">电脑:<span id="computer-score">0</span></p>
+    </div>
+    <div id="winner-info">
+        
+    </div>
+</body>
+<script src="js/wuziqi.js"></script>
+<script>
+    new chess();
+</script>
+</html>

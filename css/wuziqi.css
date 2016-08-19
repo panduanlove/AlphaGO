@@ -1,0 +1,63 @@
+*{
+    padding:0;
+    margin:0;
+}
+body.index{
+    background: #585858;
+    padding: 20px 0;
+}
+.index_box{
+    width: 800px;
+    height: 600px;
+    background: #fff;
+    border-radius: 4px;
+    margin: auto;
+    padding-top: 100px;
+}
+.index_box>div{
+    width:200px;
+    margin:auto;
+}
+.index_box>div>img{
+    width:200px;
+    height:200px;
+}
+#canvas{
+    display:block;
+    margin:20px auto;
+    box-shadow:-2px -2px 2px #efefef,5px 5px 5px #b9b9b9;
+}
+.leftside{
+    list-style:none;
+    width:100px;
+    height:250px;
+    margin:auto;
+}
+.regret-btn{
+    text-align:center;
+    line-height:1.5em;
+    border-radius:5px;
+    display:inline-block;
+    background:#2ebeff;
+    width:100%;
+    color:#fff;
+    cursor:pointer;
+    text-decoration:none;
+    margin-top:10px;
+}
+.play-btn{
+    width:100px!important;
+    margin:auto;
+}
+.btn-top{
+    padding-top:50px;
+}
+.score-box{
+    position:absolute;
+    top:100px;
+    left:100px;
+}
+.score-box .score{
+    padding-left:10px;
+    margin:10px 0 0 0;
+}

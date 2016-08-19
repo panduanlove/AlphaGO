@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/wuziqi.css"/>
+    <title>五子棋</title>
+</head>
+<body class="index">
+    <section class="index_box">
+        <div><img src="Images/logo.png"></div>
+        <div class="play-btn btn-top"><a id="whoFirst" class="regret-btn">执黑先行</a></div>
+        <div class="play-btn"><a id="chessSize" class="regret-btn">小棋盘</a></div>
+        <div class="play-btn"><a class="regret-btn" href="chess.html">开始游戏</a></div>
+    </section>
+</body>
+<script>
+    var whoFirst=document.getElementById("whoFirst");
+    var chessSize=document.getElementById("chessSize");
+    //初始化棋子颜色和棋盘大小
+    localStorage.setItem("color","1");
+    localStorage.setItem("size","0");
+    var isBlack=true;
+    var isLittleSize=true;
+    whoFirst.onclick=function(){
+        if(isBlack){
+            whoFirst.innerHTML="执白先行";
+            localStorage.setItem("color","0");
+        }else{
+            whoFirst.innerHTML="执黑先行";
+            localStorage.setItem("color","1");    //1代表我执黑色
+        }
+        isBlack=!isBlack;
+    }
+    chessSize.onclick=function(){
+        if(isLittleSize){
+            chessSize.innerHTML="大棋盘";
+            localStorage.setItem("size","1");    //1代表大棋盘
+        }else{
+            chessSize.innerHTML="小棋盘";
+            localStorage.setItem("size","0");
+        }
+        isLittleSize=!isLittleSize;
+    }
+</script>
+</html>
